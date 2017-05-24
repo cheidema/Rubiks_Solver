@@ -45,7 +45,7 @@ void Rubiks3LL::AddNode(uint data)
 
 void Rubiks3LL::PrintMoves(void)
 {
-	Condense();
+	//Condense();
 	pRNode ptemp = phead;
 	while (ptemp != ptail) {
 		PrintKey(ptemp->data);
@@ -56,7 +56,7 @@ void Rubiks3LL::PrintMoves(void)
 }
 
 void Rubiks3LL::AudioMoves(void) {
-	Condense();
+	//Condense();
 	pRNode ptemp = phead;
 	while (ptemp != ptail) {
 		AudioKey(ptemp->data);

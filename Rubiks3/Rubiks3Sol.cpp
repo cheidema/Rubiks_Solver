@@ -286,9 +286,9 @@ void Rubiks3Sol::InputToCube()
 		std::cout << "Too few different inputs";
 		exit(0);
 	}
-	for (int i = 0;i < 6;i++)
+	for (int i = 0; i < 6; i++)
 		sid[i] = 0;
-	for (int i = 0;i < 6;i++) {
+	for (int i = 0; i < 6; i++) {
 		for (int j = 0;j < 9;j++) {
 			if (rawinput[9 * i + j] == dic[0])
 				sid[i] = (0b000 << 29 - 3 * j) + sid[i];
